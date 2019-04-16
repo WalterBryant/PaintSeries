@@ -58,9 +58,7 @@ public class WaterFallLayout extends ViewGroup {
             for (int i = 0; i < childCount; i++) {
                 View child = this.getChildAt(i);
                 Log.e(TAG,"onMeasure MeasureHeight = " + child.getMeasuredHeight() + "; MeasureWidth = " + child.getMeasuredWidth());
-
                 int childHeight = child.getMeasuredHeight() * mChildWidth / child.getMeasuredWidth();
-
                 Log.e(TAG,"onMeasure mChildWidth = " + mChildWidth + "; childHeight = " + childHeight);
                 int minColum = getMinHeightColum();
 

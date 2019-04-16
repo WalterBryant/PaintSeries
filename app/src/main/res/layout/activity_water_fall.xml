@@ -5,14 +5,19 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/water_fall"
+        android:id="@+id/add_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="添加图片" />
 
-    <Button
-        android:id="@+id/circle_progress"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CircleProgressActivity"/>
+        android:layout_height="match_parent">
+
+        <com.paint.series.walterfall.WaterFallLayout
+            android:id="@+id/waterfallLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
 </LinearLayout>
