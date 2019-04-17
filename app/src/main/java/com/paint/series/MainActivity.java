@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.paint.series.circleprogressbar.CircleProgressActivity;
 import com.paint.series.paintbase.PaintBaseActivity;
+import com.paint.series.paintgradient.GradientViewActivity;
 import com.paint.series.walterfall.WaterFallActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, PaintBaseActivity.class));
+            }
+        });
+
+        findViewById(R.id.gradient_view).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, GradientViewActivity.class));
             }
         });
     }
