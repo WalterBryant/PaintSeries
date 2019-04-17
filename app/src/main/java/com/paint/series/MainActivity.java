@@ -8,6 +8,7 @@ import android.view.View;
 import com.paint.series.circleprogressbar.CircleProgressActivity;
 import com.paint.series.paintbase.PaintBaseActivity;
 import com.paint.series.paintgradient.GradientViewActivity;
+import com.paint.series.radar.RadarActivity;
 import com.paint.series.walterfall.WaterFallActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         findViewById(R.id.water_fall).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, GradientViewActivity.class));
+            }
+        });
+
+        findViewById(R.id.radar_view).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RadarActivity.class));
             }
         });
     }

@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />-->
 
-    <com.paint.series.paintbase.PathDashPathView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <!--<com.paint.series.paintbase.MyDashView
-        android:id="@+id/my_dash_view"
+    <!--<com.paint.series.paintbase.PathDashPathView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />-->
+
+    <com.paint.series.paintbase.MyDashView
+        android:id="@+id/my_dash_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-
 </LinearLayout>

@@ -21,6 +21,8 @@ public class MyDashView extends View {
 
     public MyDashView(Context context, AttributeSet attrs) {
         super(context, attrs);
+
+        startAnim();
     }
 
     @Override
