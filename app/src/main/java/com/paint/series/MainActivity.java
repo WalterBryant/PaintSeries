@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.paint.series.circleprogressbar.CircleProgressActivity;
+import com.paint.series.paintbase.PaintBaseActivity;
 import com.paint.series.walterfall.WaterFallActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CircleProgressActivity.class));
+            }
+        });
+
+        findViewById(R.id.paint_base).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PaintBaseActivity.class));
             }
         });
     }

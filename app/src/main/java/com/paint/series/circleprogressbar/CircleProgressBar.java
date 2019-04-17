@@ -21,8 +21,6 @@ public class CircleProgressBar extends View {
     private float roundWidth;
     private boolean textShow;
     private int progress;
-    private static final int STROKE = 0;
-    private static final int FILL = 1;
 
     private Paint paint;
 
@@ -46,24 +44,23 @@ public class CircleProgressBar extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        //画背景圆环
+        //1 画背景圆环
         int center = getWidth() / 2;
-
         float radius = center - roundWidth / 2;
+
         paint.setColor(roundColor);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(roundWidth);
         paint.setAntiAlias(true);
-
         canvas.drawCircle(center, center, radius, paint);
 
-        //画进度百分比
+        //2 画进度百分比
         paint.setColor(textColor);
         paint.setStrokeWidth(0);
         paint.setTextSize(textSize);
         paint.setTypeface(Typeface.DEFAULT_BOLD);
 
-        int percent = (int)(progress / (float)max * 100);
+        int percent = (int) (progress / (float) max * 100);
         String strPercent = percent + "%";
         Paint.FontMetricsInt fm = paint.getFontMetricsInt();
         if (percent != 0) {
@@ -71,9 +68,10 @@ public class CircleProgressBar extends View {
                     getWidth() / 2 + (fm.bottom - fm.top) / 2 - fm.bottom, paint);
         }
 
-        //画圆弧
+        //3 画圆弧进度条
         RectF oval = new RectF(center - radius, center - radius,
                 center + radius, center + radius);
+        paint.setColor(roundProgressColor);
         paint.setStrokeWidth(roundWidth);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeCap(Paint.Cap.ROUND);

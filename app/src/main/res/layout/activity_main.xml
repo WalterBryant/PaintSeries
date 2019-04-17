@@ -8,11 +8,17 @@
         android:id="@+id/water_fall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="添加图片" />
+        android:text="WaterFallActivity" />
 
     <Button
         android:id="@+id/circle_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CircleProgressActivity"/>
+
+    <Button
+        android:id="@+id/paint_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PaintBAseActivity"/>
 </LinearLayout>
