@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".radar.RadarActivity"></activity>
+        <activity android:name=".xfermode.XfermodeActivity"/>
+        <activity android:name=".radar.RadarActivity" />
         <activity android:name=".paintgradient.GradientViewActivity" />
         <activity android:name=".paintbase.PaintBaseActivity" />
         <activity android:name=".MainActivity">

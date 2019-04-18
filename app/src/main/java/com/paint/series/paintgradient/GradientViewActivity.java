@@ -18,7 +18,7 @@ public class GradientViewActivity extends AppCompatActivity {
         setContentView(zoomImageView);*/
 
 //        RoundImageView view = new RoundImageView(this);
-        HeartMapView view = new HeartMapView(this);
-        setContentView(view);
+       /* HeartMapView view = new HeartMapView(this);
+        setContentView(view);*/
     }
 }
